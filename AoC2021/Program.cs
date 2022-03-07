@@ -1,7 +1,8 @@
 ﻿using AoC2021.Solutions;
 using AoC2021.Solutions.DayOne;
+using AoC2021.Solutions.DayTwo;
 
-var solvers = new List<ISolver> {new DayOneSolver()};
+var solvers = new List<ISolver> {new DayOneSolver(), new DayTwoResolver()};
 
 foreach (var solver in solvers)
 {
