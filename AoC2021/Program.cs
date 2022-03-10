@@ -1,8 +1,16 @@
 ﻿using AoC2021.Solutions;
-using AoC2021.Solutions.DayOne;
-using AoC2021.Solutions.DayTwo;
+using AoC2021.Solutions._01;
+using AoC2021.Solutions._02;
+using AoC2021.Solutions._03;
 
-var solvers = new List<ISolver> {new DayOneSolver(), new DayTwoResolver()};
+IEnumerable<string> ReadLines(string fileName) => File.ReadLines($"Inputs/{fileName}");
+
+var solvers = new List<ISolver>
+{
+    new DayOneSolver(ReadLines("day1.txt")), 
+    new DayTwoResolver(ReadLines("day2.txt")), 
+    new DayThreeSolver(ReadLines("day3.txt"))
+};
 
 foreach (var solver in solvers)
 {

@@ -2,12 +2,12 @@
 
 namespace AoC2021.Solutions;
 
-internal abstract class AbstractSolver
+public abstract class AbstractSolver
 {
     protected ImmutableArray<string> Lines { get; }
 
-    protected AbstractSolver(string fileName)
+    protected AbstractSolver(IEnumerable<string> lines)
     {
-        Lines = File.ReadLines($"Inputs/{fileName}").ToImmutableArray();
+        Lines = lines.ToImmutableArray();
     }
 }

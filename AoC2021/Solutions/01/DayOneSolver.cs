@@ -1,12 +1,10 @@
 ﻿using System.Collections.Immutable;
 
-namespace AoC2021.Solutions.DayOne;
+namespace AoC2021.Solutions._01;
 
-internal class DayOneSolver : AbstractSolver, ISolver
+public class DayOneSolver : AbstractSolver, ISolver
 {
-    private const string FileName = "day1.txt";
-
-    public DayOneSolver() : base(FileName)
+    public DayOneSolver(IEnumerable<string> input) : base(input)
     {
     }
     
