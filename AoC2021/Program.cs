@@ -8,7 +8,7 @@ IEnumerable<string> ReadLines(string fileName) => File.ReadLines($"Inputs/{fileN
 var solvers = new List<ISolver>
 {
     new DayOneSolver(ReadLines("day1.txt")), 
-    new DayTwoResolver(ReadLines("day2.txt")), 
+    new DayTwoSolver(ReadLines("day2.txt")), 
     new DayThreeSolver(ReadLines("day3.txt"))
 };
 

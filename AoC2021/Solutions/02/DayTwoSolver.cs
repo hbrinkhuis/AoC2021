@@ -1,8 +1,8 @@
 ﻿namespace AoC2021.Solutions._02;
 
-internal class DayTwoResolver : AbstractSolver, ISolver
+public class DayTwoSolver : AbstractSolver, ISolver
 {
-    public DayTwoResolver(IEnumerable<string> input) : base(input)
+    public DayTwoSolver(IEnumerable<string> input) : base(input)
     {
     }
 
